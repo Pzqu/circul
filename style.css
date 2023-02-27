@@ -1,0 +1,46 @@
+body {
+  /* height: 100vh; */
+  margin: 0;
+}
+
+.box {
+  position: relative;
+  height: 800px;
+  border: 2px solid;
+}
+
+.item {
+  position: absolute;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  border: 1px solid red;
+  border-radius: 50px;
+  animation: itemDinamic 10s ease 3s infinite alternate;
+  /* animation-name: itemDinamic;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+}
+
+@keyframes itemDinamic {
+  0% {
+    background-color: green;
+  }
+  25% {
+    left: 100%;
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    background-color: orange;
+  }
+  75% {
+    width: 100px;
+    height: 100px;
+  }
+  100% {
+    background-color: blue;
+  }
+}
